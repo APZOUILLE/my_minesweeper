@@ -44,7 +44,7 @@ class Minesweeper:
             return "Game Over"
         self.revealed.add((row, col))
         if self.board[row][col] == "":
-            self.board[row][col] = "0"
+            self.board[row][col] = ""
             for i in range(row - 1, row + 2):
                 for j in range(col - 1, col + 2):
                     if (
