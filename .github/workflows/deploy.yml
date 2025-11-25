@@ -22,5 +22,5 @@ jobs:
           credentials_json: "${{ secrets.GCP_KEY }}"
 
       # Use Google official GHA to deploy 🎉
-      - id: "deploy"
+      - id: "deployed"
         uses: "google-github-actions/deploy-appengine@v1"
