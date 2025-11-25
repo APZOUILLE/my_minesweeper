@@ -3,8 +3,6 @@
 # minesweeper.py
 import random
 
-import pytest
-
 
 class Minesweeper:
     def __init__(self, rows: int, cols: int, num_mines: int):
@@ -41,6 +39,7 @@ class Minesweeper:
         Any adjacent cells with no mines are also revealed.
         Returns "Game Over" if a mine is revealed, "Continue" otherwise.
         """
+        # coucou
         if (row, col) in self.mines:
             return "Game Over"
         self.revealed.add((row, col))
